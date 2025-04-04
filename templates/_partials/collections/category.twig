@@ -1,4 +1,4 @@
-<div class="py-[60px] lg:py-[100px] px-4 lg:px-[56px] bg-[url(C:\Users\Tom\Herd\technical-test\public\skin\categories_background.svg)] p-[16px] bg-cover bg-no-repeat">
+<div class="py-[60px] lg:py-[100px] px-4 lg:px-[56px] bg-[url(C:\Users\Tom\Herd\technical-test\public\skin\categories_background.svg)] p-[16px]">
     <h2 class="text-[32px] lg:text-[50px] font-bungee leading-none text-center text-white uppercase mb-8 lg:mb-10">{{ entry.categoriesTitle }}</h2>
 
     <div class="grid grid-cols-2 w-fit mx-auto gap-[10px] lg:gap-5 justify-center sm:flex sm:flex-wrap">
@@ -7,7 +7,7 @@
                 {% if category.categoryImage %}
                     <img src="{{ category.categoryImage[0].getUrl() }}" alt="{{ category.categoryImage[0].title }}" class="">
                 {% endif %}
-                <h2 class="text-base font-bungee text-white lg:text-2xl ">{{ category.title }}</h2>
+                <h2 class="text-base font-bungee text-white lg:text-2xl my-auto">{{ category.title }}</h2>
             </a>
         {% endfor %}
     </div>
