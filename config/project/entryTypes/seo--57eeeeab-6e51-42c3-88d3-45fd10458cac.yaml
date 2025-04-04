@@ -1,0 +1,80 @@
+color: null
+fieldLayouts:
+  3399cd25-9ced-41b1-8a82-03d28d672cc2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3ee64681-8d20-46e8-8353-82637bbff392
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0827f879-f23a-40b6-ab69-cf0bfd921639
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: efa2370a-05ae-4904-9954-c12d79b9ce64
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e95fd477-7284-46bb-a05f-dc959bc42a17
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f68245d2-3a0f-4435-892a-a706cba67d4d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6a0199ed-800c-4c53-a4aa-73618431dd43
+        userCondition: null
+handle: seo
+hasTitleField: false
+icon: ''
+name: SEO
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: SEO
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

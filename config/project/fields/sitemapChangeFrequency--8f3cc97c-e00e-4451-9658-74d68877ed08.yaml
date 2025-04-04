@@ -1,0 +1,43 @@
+columnSuffix: null
+handle: sitemapChangeFrequency
+instructions: null
+name: 'Sitemap Change Frequency'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Daily
+        -
+          - value
+          - daily
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Weekly
+        -
+          - value
+          - weekly
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Monthly
+        -
+          - value
+          - monthly
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

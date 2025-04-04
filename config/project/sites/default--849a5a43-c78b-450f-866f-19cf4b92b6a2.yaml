@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: en-GB
+name: 'Technical Test'
+primary: true
+siteGroup: cbb2c838-82e8-4a06-999f-f08b287438bd # Technical Test
+sortOrder: 1

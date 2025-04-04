@@ -1,0 +1,42 @@
+{% set pages = craft.entries.section('pages').level('<= 1').showInNavigation(true).all() %}
+
+<header class="py-4 lg:py-5 bg-dark-grey">
+    <div class="container max-w-none lg:px-[56px]">
+        <div class="flex justify-between items-center gap-5">
+            <a href="{{ siteUrl() }}" title="Visit homepage" aria-label="Visit homepage">
+                <img src="/skin/logo.svg" alt="{{ siteName }} logo" class="w-[199px] xl:w-[269px]">
+            </a>
+
+            {% cache globally %}
+                {% include '_partials/globals/nav.twig' with {
+                    pages: pages
+                } %}
+            {% endcache %}
+
+            <button type="button" id="open-mobile-nav-js" class="lg:hidden">
+                <i class="fa-solid fa-bars text-xl text-white"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<header id="mobile-header" class="lg:hidden py-4 px-4 fixed left-0 top-0 w-full h-full bg-dark-grey translate-x-full [&.active]:translate-x-0 transition z-10">
+    <div class="container m-0 p-0">
+        <div class="flex justify-between items-center gap-5 mb-10">
+            <a href="{{ siteUrl() }}" title="Visit homepage" aria-label="Visit homepage">
+                <img src="/skin/logo.svg" alt="{{ siteName }} logo" class="w-[180px]">
+            </a>
+
+            <button type="button" id="close-mobile-nav-js" class="lg:hidden">
+                <i class="fa-solid fa-magnifying-glass text-2xl text-white mr-6"></i>
+                <i class="fa-solid fa-xmark text-2xl text-white"></i>
+            </button>
+        </div>
+
+        {% cache globally %}
+            {% include '_partials/globals/mobile-nav.twig' with {
+                pages: pages
+            } %}
+        {% endcache %}
+    </div>
+</header>

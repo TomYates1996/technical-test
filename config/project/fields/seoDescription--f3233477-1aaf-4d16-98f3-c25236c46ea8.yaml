@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: seoDescription
+instructions: 'Entry intro will be used instead if empty'
+name: 'SEO Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 150
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

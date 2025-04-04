@@ -1,0 +1,63 @@
+{% do craft.app.elements.eagerLoadElements(
+    className(entry),
+    [entry],
+    [
+        'thumbImage',
+        'seoImage'
+    ]
+) %}
+
+{% if entry.seoImage is defined and entry.seoImage|length %}
+    {% set seoImage = entry.seoImage %}
+{% elseif entry.thumbImage is defined and entry.thumbImage|length %}
+    {% set seoImage = entry.thumbImage %}
+{% endif %}
+
+{% if entry.seoDescription is defined and entry.seoDescription|length %}
+    {% set seoDescription = entry.seoDescription|striptags %}
+{% elseif entry.intro is defined and entry.intro|length %}
+    {% set seoDescription = entry.intro|striptags %}
+{% endif %}
+
+<title>{{ entry.title }} | {{ siteName }}</title>
+
+<meta name="description" content="{{ entry.seoDescription is defined and entry.seoDescription|length ? entry.seoDescription|striptags : entry.intro|striptags }}">
+
+<meta content="{{ entry.seoTitle is defined and entry.seoTitle|length ? entry.seoTitle : entry.title }}" property="og:title">
+<meta content="{{ entry.seoDescription is defined and entry.seoDescription|length ? entry.seoDescription|striptags : entry.intro|striptags }}" property="og:description">
+<meta content="{{ currentSite.language }}" property="og:locale">
+<meta content="{{ siteName }}" property="og:site_name">
+<meta content="{{ entry.getUrl }}" property="og:url">
+
+{% if seoImage is defined and seoImage|length %}
+    <meta content="{{ seoImage[0].getUrl() }}" property="og:image">
+{% endif %}
+
+{% if siteSettings.facebookUrl is defined and siteSettings.facebookUrl|length %}
+    <meta content="{{ siteSettings.facebookUrl }}" property="og:see_also">
+{% endif %}
+
+{% if siteSettings.xUrl is defined and siteSettings.xUrl|length %}
+    <meta content="{{ siteSettings.xUrl }}" property="og:see_also">
+
+    {# Twitter Card #}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@{{ siteSettings.xUrl|split('/')[3] }}" />
+    <meta name="twitter:creator" content="@bluestormdesign" />
+
+    {% if seoDescription is defined and seoDescription|length %}
+        <meta name="twitter:description" content="{{ entry.seoDescription is defined and entry.seoDescription|length ? entry.seoDescription|striptags : entry.intro|striptags }}">
+    {% endif %}
+
+    {% if seoImage is defined and seoImage|length %}
+        <meta name="twitter:image" content="{{ seoImage[0].getUrl() }}">
+    {% endif %}
+{% endif %}
+
+{% if entry.canonicalUrl is defined and entry.canonicalUrl|length %}
+    <link rel="canonical" href="{{ entry.canonicalUrl }}" />
+{% endif %}
+
+{% if siteSettings.instagramUrl is defined and siteSettings.instagramUrl|length %}
+    <meta content="{{ siteSettings.instagramUrl }}" property="og:see_also">
+{% endif %}

@@ -1,0 +1,152 @@
+{% set address = [] %}
+
+{% if siteSettings.streetAddress is defined and siteSettings.streetAddress|length %}
+    {% set address = address|merge([siteSettings.streetAddress]) %}
+{% endif %}
+
+{% if siteSettings.locality is defined and siteSettings.locality|length %}
+    {% set address = address|merge([siteSettings.locality]) %}
+{% endif %}
+
+{% if siteSettings.region is defined and siteSettings.region|length %}
+    {% set address = address|merge([siteSettings.region]) %}
+{% endif %}
+
+{% if siteSettings.postalCode is defined and siteSettings.postalCode|length %}
+    {% set address = address|merge([siteSettings.postalCode]) %}
+{% endif %}
+
+{% if siteSettings.country is defined and siteSettings.country|length %}
+    {% set address = address|merge([siteSettings.country]) %}
+{% endif %}
+
+{% set pages = craft.entries.section('pages').level('<= 1').showInNavigation(true).all() %}
+{% set infoPages = craft.entries.section('information').showInNavigation(true).all() %}
+
+{% set socialMedia = [] %}
+
+{% if siteSettings.xUrl is defined and siteSettings.xUrl|length %}
+    {% set socialMedia = socialMedia|merge([{
+        'title': 'X',
+        'url': siteSettings.xUrl,
+        'icon': 'fa-x-twitter'
+    }]) %}
+{% endif %}
+
+{% if siteSettings.facebookUrl is defined and siteSettings.facebookUrl|length %}
+    {% set socialMedia = socialMedia|merge([{
+        'title': 'Facebook',
+        'url': siteSettings.facebookUrl,
+        'icon': 'fa-facebook-f'
+    }]) %}
+{% endif %}
+
+{% if siteSettings.instagramUrl is defined and siteSettings.instagramUrl|length %}
+    {% set socialMedia = socialMedia|merge([{
+        'title': 'Instagram',
+        'url': siteSettings.instagramUrl,
+        'icon': 'fa-instagram'
+    }]) %}
+{% endif %}
+
+{% if siteSettings.youtubeUrl is defined and siteSettings.youtubeUrl|length %}
+    {% set socialMedia = socialMedia|merge([{
+        'title': 'Youtube',
+        'url': siteSettings.youtubeUrl,
+        'icon': 'fa-youtube'
+    }]) %}
+{% endif %}
+
+{% if siteSettings.linkedinUrl is defined and siteSettings.linkedinUrl|length %}
+    {% set socialMedia = socialMedia|merge([{
+        'title': 'LinkedIn',
+        'url': siteSettings.linkedinUrl,
+        'icon': 'fa-linkedin-in'
+    }]) %}
+{% endif %}
+
+{% if siteSettings.tiktokUrl is defined and siteSettings.tiktokUrl|length %}
+    {% set socialMedia = socialMedia|merge([{
+        'title': 'TikTok',
+        'url': siteSettings.tiktokUrl,
+        'icon': 'fa-tiktok'
+    }]) %}
+{% endif %}
+
+<footer class="bg-[url(C:\Users\Tom\Herd\technical-test\public\skin\footer_background.png)] bg-cover bg-no-repeat">
+    <div class="container max-w-none p-0">
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-5 pt-[60px] pb-10 lg:py-[100px] px-4 lg:px-[56px]  p-[16px]">
+            <div class="flex flex-col justify-start align-center gap-6">
+                <img src="/skin/logo.svg" alt="" class="w-[269px] mx-auto sm:mx-0">
+
+                <div class="flex flex-col gap-3">
+                    {% if siteSettings.emailAddress is defined and siteSettings.emailAddress|length %}
+                        {% apply enkode_emails %}
+                            <a href="mailto:{{ siteSettings.emailAddress }}" title="Email us at {{ siteSettings.emailAddress }}" aria-label="Email us at {{ siteSettings.emailAddress }}" class="flex items-center gap-1.5 text-lg group uppercase text-black font-bungee bg-light-green py-5 w-full text-center justify-center rounded-[16px] lg:max-w-[174px]">
+                                    Get in touch
+                            </a>
+                        {% endapply %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-[10px] xl:col-span-2">
+                <div>
+                    {% cache globally %}
+                        <nav class="flex flex-col gap-4">
+                            {% for page in pages %}
+                                <a href="{{ page.getUrl() }}" title="{{ page.title }}" aria-label="{{ page.title }}" class="text-white hover:underline font-telex text-base/[24px]">
+                                    {{ page.title }}
+                                </a>
+                            {% endfor %}
+                        </nav>
+                    {% endcache %}
+                </div>
+
+                <div>
+                    {% cache globally %}
+                        <nav class="flex flex-col gap-4">
+                            {% for page in infoPages %}
+                                <a href="{{ page.getUrl() }}" title="{{ page.title }}" aria-label="{{ page.title }}" class="hover:underline text-white hover:underline font-telex text-base/[24px]">
+                                    {{ page.title }}
+                                </a>
+                            {% endfor %}
+                        </nav>
+                    {% endcache %}
+                </div>
+            </div>
+
+      
+                <form action="#" method="POST" class="">
+                    <h5 class="uppercase font-bungee text-lg text-white leading-none mb-4 xl:text-xl">Sign up to our newsletter for 10% off your first order</h5>
+                    <div class="grid grid-cols-3 gap-[10px]">
+                        <input type="email" id="email" name="email" required placeholder="Email Address" class="placeholder-white rounded-[16px] border-light-green border-[2px] bg-grey px-4 py-5 font-telex text-white leading-none text-base col-span-2">
+                        <button type="submit" class="bg-light-green text-black font-bungee uppercase rounded-[16px] px-7 py-5">Join</button>
+                    </div>
+                </form>
+        </div>
+
+        <div class="flex flex-col justify-start items-center border-t-[2px] border-white px-4 pt-10 pb-[60px] gap-6 lg:flex-row lg:justify-between lg:px-[56px] lg:py-6">  
+
+            <p class="text-white font-telex">
+                &copy; {{ siteName }} {{ now|date('Y') }}
+            </p>
+
+            {% if socialMedia is defined and socialMedia|length %}
+                <div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        {% for link in socialMedia %}
+                            <a href="{{ link.url }}" title="Follow us on {{ link.title }}" aria-label="Follow us on {{ link.title }}" target="_blank" class="flex justify-center items-center text-white size-10 group hover:bg-light-green hover:text-black transition hover:rotate-[10deg]">
+                                <i class="fa-brands {{ link.icon }} text-xl group-hover:-rotate-[10deg] transition"></i>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        
+
+            <a href="https://bluestormdesign.co.uk/?utm_source={{ siteName|url_encode }}&amp;utm_medium=Footer+Link&amp;utm_campaign=Client+Links" title="Web Design by Bluestorm Design &amp; Marketing" aria-label="Web Design by Bluestorm Design &amp; Marketing" target="_blank" class="flex items-center gap-2 font-telex text-base/[24px] text-white">
+                Website by {{ svg('@webroot/skin/bluestorm.svg') }}
+            </a>
+        </div>
+    </div>
+</footer>

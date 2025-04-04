@@ -1,0 +1,44 @@
+@import "../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css";
+@import "../../node_modules/swiper/swiper-bundle.css";
+
+@import "../../node_modules/@fortawesome/fontawesome-pro/css/fontawesome.css";
+@import "../../node_modules/@fortawesome/fontawesome-pro/css/brands.css";
+@import "../../node_modules/@fortawesome/fontawesome-pro/css/light.css";
+@import "../../node_modules/@fortawesome/fontawesome-pro/css/regular.css";
+@import "../../node_modules/@fortawesome/fontawesome-pro/css/solid.css";
+@import "../../node_modules/@fortawesome/fontawesome-pro/css/sharp-solid.css";
+
+
+/* Any custom CSS */
+a.skip-to-the-main-content {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-to-the-main-content:focus, a.skip-to-the-main-content:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+
+.fancybox__slide.has-youtube {
+    .fancybox__content {
+        width: 90% !important;
+        height: auto!important;
+    }
+}

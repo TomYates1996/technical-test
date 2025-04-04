@@ -1,0 +1,93 @@
+description: ''
+handle: siteEditors
+name: 'Site Editors'
+permissions:
+  - accesscp
+  - accessplugin-formie
+  - 'assignusergroup:3a7ac9d6-11ea-4e84-a06b-34180466c98d' # Site Editors
+  - assignuserpermissions
+  - 'createentries:3bc32924-9d82-406a-ab56-5f9f0f013e7b'
+  - 'createentries:6b701eef-3b60-45be-b388-e87af2fa6cfb' # Pages
+  - 'createentries:a29485b8-400f-4e0d-b47d-804211ef5731'
+  - 'createfolders:176e278b-a98d-4748-adfd-4dc6c695c62b' # Banners
+  - 'createfolders:797b49bd-7c1a-4253-99a3-167d95a09dfc' # Images
+  - 'createfolders:ad63a91a-c1e7-4390-98f0-a6733a088a13' # Files
+  - 'deleteassets:176e278b-a98d-4748-adfd-4dc6c695c62b' # Banners
+  - 'deleteassets:797b49bd-7c1a-4253-99a3-167d95a09dfc' # Images
+  - 'deleteassets:ad63a91a-c1e7-4390-98f0-a6733a088a13' # Files
+  - 'deleteentries:3bc32924-9d82-406a-ab56-5f9f0f013e7b'
+  - 'deleteentries:6b701eef-3b60-45be-b388-e87af2fa6cfb' # Pages
+  - 'deleteentries:a29485b8-400f-4e0d-b47d-804211ef5731'
+  - 'deletepeerassets:176e278b-a98d-4748-adfd-4dc6c695c62b' # Banners
+  - 'deletepeerassets:797b49bd-7c1a-4253-99a3-167d95a09dfc' # Images
+  - 'deletepeerassets:ad63a91a-c1e7-4390-98f0-a6733a088a13' # Files
+  - 'deletepeerentries:3bc32924-9d82-406a-ab56-5f9f0f013e7b'
+  - 'deletepeerentries:6b701eef-3b60-45be-b388-e87af2fa6cfb' # Pages
+  - 'deletepeerentries:a29485b8-400f-4e0d-b47d-804211ef5731'
+  - 'deletepeerentrydrafts:3bc32924-9d82-406a-ab56-5f9f0f013e7b'
+  - 'deletepeerentrydrafts:6763099c-ba39-471b-a637-696093a99df7'
+  - 'deletepeerentrydrafts:6b701eef-3b60-45be-b388-e87af2fa6cfb' # Pages
+  - 'deletepeerentrydrafts:75b55757-a158-4cbf-b702-49a71203235c' # Site Settings
+  - 'deletepeerentrydrafts:a29485b8-400f-4e0d-b47d-804211ef5731'
+  - 'editimages:176e278b-a98d-4748-adfd-4dc6c695c62b' # Banners
+  - 'editimages:797b49bd-7c1a-4253-99a3-167d95a09dfc' # Images
+  - 'editimages:ad63a91a-c1e7-4390-98f0-a6733a088a13' # Files
+  - 'editpeerimages:176e278b-a98d-4748-adfd-4dc6c695c62b' # Banners
+  - 'editpeerimages:797b49bd-7c1a-4253-99a3-167d95a09dfc' # Images
+  - 'editpeerimages:ad63a91a-c1e7-4390-98f0-a6733a088a13' # Files
+  - editusers
+  - formie-accessforms
+  - formie-accesssentnotifications
+  - formie-accesssubmissions
+  - formie-createforms
+  - formie-deleteforms
+  - formie-manageforms
+  - formie-viewsentnotifications
+  - formie-viewsubmissions
+  - registerusers
+  - 'replacefiles:176e278b-a98d-4748-adfd-4dc6c695c62b' # Banners
+  - 'replacefiles:797b49bd-7c1a-4253-99a3-167d95a09dfc' # Images
+  - 'replacefiles:ad63a91a-c1e7-4390-98f0-a6733a088a13' # Files
+  - 'replacepeerfiles:176e278b-a98d-4748-adfd-4dc6c695c62b' # Banners
+  - 'replacepeerfiles:797b49bd-7c1a-4253-99a3-167d95a09dfc' # Images
+  - 'replacepeerfiles:ad63a91a-c1e7-4390-98f0-a6733a088a13' # Files
+  - 'saveassets:176e278b-a98d-4748-adfd-4dc6c695c62b' # Banners
+  - 'saveassets:797b49bd-7c1a-4253-99a3-167d95a09dfc' # Images
+  - 'saveassets:ad63a91a-c1e7-4390-98f0-a6733a088a13' # Files
+  - 'saveentries:3bc32924-9d82-406a-ab56-5f9f0f013e7b'
+  - 'saveentries:6763099c-ba39-471b-a637-696093a99df7'
+  - 'saveentries:6b701eef-3b60-45be-b388-e87af2fa6cfb' # Pages
+  - 'saveentries:75b55757-a158-4cbf-b702-49a71203235c' # Site Settings
+  - 'saveentries:a29485b8-400f-4e0d-b47d-804211ef5731'
+  - 'savepeerassets:176e278b-a98d-4748-adfd-4dc6c695c62b' # Banners
+  - 'savepeerassets:797b49bd-7c1a-4253-99a3-167d95a09dfc' # Images
+  - 'savepeerassets:ad63a91a-c1e7-4390-98f0-a6733a088a13' # Files
+  - 'savepeerentries:3bc32924-9d82-406a-ab56-5f9f0f013e7b'
+  - 'savepeerentries:6b701eef-3b60-45be-b388-e87af2fa6cfb' # Pages
+  - 'savepeerentries:a29485b8-400f-4e0d-b47d-804211ef5731'
+  - 'savepeerentrydrafts:3bc32924-9d82-406a-ab56-5f9f0f013e7b'
+  - 'savepeerentrydrafts:6763099c-ba39-471b-a637-696093a99df7'
+  - 'savepeerentrydrafts:6b701eef-3b60-45be-b388-e87af2fa6cfb' # Pages
+  - 'savepeerentrydrafts:75b55757-a158-4cbf-b702-49a71203235c' # Site Settings
+  - 'savepeerentrydrafts:a29485b8-400f-4e0d-b47d-804211ef5731'
+  - 'utility:clear-caches'
+  - 'viewassets:176e278b-a98d-4748-adfd-4dc6c695c62b' # Banners
+  - 'viewassets:797b49bd-7c1a-4253-99a3-167d95a09dfc' # Images
+  - 'viewassets:ad63a91a-c1e7-4390-98f0-a6733a088a13' # Files
+  - 'viewentries:3bc32924-9d82-406a-ab56-5f9f0f013e7b'
+  - 'viewentries:6763099c-ba39-471b-a637-696093a99df7'
+  - 'viewentries:6b701eef-3b60-45be-b388-e87af2fa6cfb' # Pages
+  - 'viewentries:75b55757-a158-4cbf-b702-49a71203235c' # Site Settings
+  - 'viewentries:a29485b8-400f-4e0d-b47d-804211ef5731'
+  - 'viewpeerassets:176e278b-a98d-4748-adfd-4dc6c695c62b' # Banners
+  - 'viewpeerassets:797b49bd-7c1a-4253-99a3-167d95a09dfc' # Images
+  - 'viewpeerassets:ad63a91a-c1e7-4390-98f0-a6733a088a13' # Files
+  - 'viewpeerentries:3bc32924-9d82-406a-ab56-5f9f0f013e7b'
+  - 'viewpeerentries:6b701eef-3b60-45be-b388-e87af2fa6cfb' # Pages
+  - 'viewpeerentries:a29485b8-400f-4e0d-b47d-804211ef5731'
+  - 'viewpeerentrydrafts:3bc32924-9d82-406a-ab56-5f9f0f013e7b'
+  - 'viewpeerentrydrafts:6763099c-ba39-471b-a637-696093a99df7'
+  - 'viewpeerentrydrafts:6b701eef-3b60-45be-b388-e87af2fa6cfb' # Pages
+  - 'viewpeerentrydrafts:75b55757-a158-4cbf-b702-49a71203235c' # Site Settings
+  - 'viewpeerentrydrafts:a29485b8-400f-4e0d-b47d-804211ef5731'
+  - viewusers

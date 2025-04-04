@@ -1,0 +1,29 @@
+<nav class="flex flex-col gap-3">
+    {% for page in pages %}
+        <div class="group">
+            <div class="flex justify-between items-center text-white font-telex">
+                <a href="{{ page.getUrl() }}" title="{{ page.title }}" aria-label="{{ page.title }}" {% if page.type.handle == 'redirect' %} target="_blank" {% endif %} class="text-lg">
+                    {{ page.title }}
+                </a>
+
+                {% if page.hasDescendants == true and page.slug != 'contact-us' %}
+                    <button class="reveal-child-pages">
+                        <i class="fa-regular fa-chevron-down text-base group-[&.active]:rotate-180 transition"></i>
+                    </button>
+                {% endif %}
+            </div>
+
+            {% if page.hasDescendants == true and page.slug != 'contact-us' %}
+                <div class="children-js hidden group-[&.active]:flex ml-2.5 mt-2">
+                    <nav class="flex flex-col gap-3">
+                        {% for child in page.children() %}
+                            <a href="{{ child.getUrl() }}" title="{{ child.title }}" aria-label="{{ child.title }}" {% if child.type.handle == 'redirect' %} target="_blank" {% endif %} class="text-lg">
+                                {{ child.title }}
+                            </a>
+                        {% endfor %}
+                    </nav>
+                </div>
+            {% endif %}
+        </div>
+    {% endfor %}
+</nav>

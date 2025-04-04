@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Telex&display=swap');
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-h1 lg:text-h1-desktop;
+    }
+
+    h2 {
+        @apply text-h2 lg:text-h2-desktop;
+    }
+
+    h3 {
+        @apply text-h3 lg:text-h3-desktop;
+    }
+
+    h4 {
+        @apply text-h4 lg:text-h4-desktop;
+    }
+
+    h5 {
+        @apply text-h5 lg:text-h5-desktop;
+    }
+
+    h6 {
+        @apply text-h6 lg:text-h6-desktop;
+    }
+}
+
+.transition {
+    @apply transition-all duration-300 ease-in-out;
+}
+
+/* FORMIE - CUSTOM FORM STYLES */
+.fui-row {
+    @apply !flex-col lg:!flex-row;
+}
+
+.fui-label, .fui-legend {
+    @apply !text-base lg:!text-lg;
+}
+
+.fui-group {
+    @apply !border-none !p-0;
+}
+
+.fui-input {
+    @apply !rounded-none !py-3 !text-base;
+}
+
+.fui-submit {
+    @apply !rounded-none !text-base lg:!text-lg;
+}
+
+.fui-error-message {
+    @apply !mt-0 p-2 !text-white bg-red-600 !font-bold;
+}
+
+.fui-alert-error {
+    @apply !mt-0 p-2 !text-white !bg-red-600 !font-bold !rounded-none;
+}
+
+.not-expanded {
+    display: grid;
+    grid-template-rows: 0fr;
+}
+
+.expanded {
+    grid-template-rows: 1fr;
+}

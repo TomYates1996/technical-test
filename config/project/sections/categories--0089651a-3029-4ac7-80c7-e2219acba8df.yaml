@@ -1,0 +1,16 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 542c5338-9cb4-4868-b410-52011e598667 # Category
+handle: categories
+maxAuthors: 1
+name: Categories
+propagationMethod: all
+siteSettings:
+  849a5a43-c78b-450f-866f-19cf4b92b6a2: # Technical Test
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

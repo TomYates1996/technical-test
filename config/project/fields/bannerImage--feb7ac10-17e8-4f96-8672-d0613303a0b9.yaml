@@ -1,0 +1,38 @@
+columnSuffix: null
+handle: bannerImage
+instructions: null
+name: 'Banner Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:176e278b-a98d-4748-adfd-4dc6c695c62b' # Banners
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:797b49bd-7c1a-4253-99a3-167d95a09dfc' # Images
+  restrictedLocationSubpath: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:797b49bd-7c1a-4253-99a3-167d95a09dfc' # Images
+    - 'volume:176e278b-a98d-4748-adfd-4dc6c695c62b' # Banners
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

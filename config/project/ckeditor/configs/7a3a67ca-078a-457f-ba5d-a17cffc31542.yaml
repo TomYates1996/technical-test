@@ -1,0 +1,33 @@
+headingLevels:
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+name: Default
+options:
+  fontColor:
+    colors:
+      - '#009ddc'
+      - '#7CC735'
+      - '#FF7B00'
+  link:
+    decorators:
+      openInNewTab:
+        attributes:
+          rel: 'noopener noreferrer'
+          target: _blank
+        label: 'Open in a new tab'
+        mode: manual
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link
+  - bulletedList
+  - numberedList
+  - underline
+  - fontColor
+  - subscript
+  - superscript

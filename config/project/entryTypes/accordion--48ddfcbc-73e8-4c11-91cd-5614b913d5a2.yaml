@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  3aa11cea-d9cb-478b-bd77-de4479dd0760:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e5c6c772-c9fb-4170-a20e-4df8888512c7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 14ca16b8-5033-44cc-a9bc-469c58b9f541 # Accordion Items
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7606416f-be26-476f-ab73-849198ff433a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b7718040-e913-4b68-a5e9-e3264a62c94f
+        userCondition: null
+handle: accordion
+hasTitleField: false
+icon: cubes
+name: Accordion
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: Accordion
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

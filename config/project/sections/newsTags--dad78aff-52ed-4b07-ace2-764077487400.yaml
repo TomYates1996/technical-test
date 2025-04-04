@@ -1,0 +1,16 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: b80ea1c9-5963-40d8-8130-0f0082c27900 # Basic
+handle: newsTags
+maxAuthors: 1
+name: 'News Tags'
+propagationMethod: all
+siteSettings:
+  849a5a43-c78b-450f-866f-19cf4b92b6a2: # Technical Test
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

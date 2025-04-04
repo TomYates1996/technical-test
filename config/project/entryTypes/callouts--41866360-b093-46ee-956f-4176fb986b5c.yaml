@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  215220b0-e6c3-41e5-b5df-8a92140ad1b3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 375489cc-c067-4622-80bb-f9235e1cea2b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b64a926e-e29f-4db7-b763-c123fc2b7709 # Callouts
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7bb601e5-9dd0-4472-aec2-1eba9ae3d0ae
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ad30d59f-346e-4583-b635-0b73f3912927
+        userCondition: null
+handle: callouts
+hasTitleField: false
+icon: cubes
+name: Callouts
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: Callouts
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

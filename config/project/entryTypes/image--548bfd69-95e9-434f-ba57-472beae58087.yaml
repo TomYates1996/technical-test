@@ -1,0 +1,80 @@
+color: null
+fieldLayouts:
+  7818101e-62f6-4687-88d9-d869c9eea9f8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d18b283e-6735-47d8-b21c-001f22d44f5d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f021cc07-c4ac-4c37-8098-04da97610f55 # Asset
+            handle: image
+            includeInCards: false
+            instructions: null
+            label: Image
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e12652d-5fe6-45e1-bc40-3ccbbfe4352c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9b44b14c-1be8-4cbd-bd8d-f2ec6c73f545
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ddbc92b-9a24-4508-bb85-43764fdd8b8e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 35296d59-6086-43f1-8430-ecab83303231
+        userCondition: null
+handle: image
+hasTitleField: false
+icon: cubes
+name: Image
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: Image
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

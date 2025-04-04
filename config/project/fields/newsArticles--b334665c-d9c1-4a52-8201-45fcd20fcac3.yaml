@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: newsArticles
+instructions: null
+name: 'News Articles'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Add an Article'
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources:
+    - 'section:690557fb-0265-427f-8f0f-816c7fa6413c' # News
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

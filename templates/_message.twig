@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ craft.app.language }}">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <meta name="csrfTokenName" content="{{ craft.app.config.general.csrfTokenName|e }}"/>
+    <meta name="csrfTokenValue" content="{{ craft.app.request.csrfToken|e }}"/>
+
+    <link rel="stylesheet" href="{{ craft.vite.asset("src/css/tailwind.css") }}">
+    <link rel="stylesheet" href="{{ craft.vite.asset("src/css/app.css") }}">
+
+    {{ craft.vite.script("src/js/app.js") }}
+
+    {% block head %}{% endblock %}
+</head>
+<body class="bg-404 bg-cover bg-center bg-no-repeat !h-screen flex justify-center items-center">
+<main id="content">
+    <div class="container">
+        <main id="content" class="p-7 lg:p-10 bg-white">
+            <a id="logo" href="{{ siteUrl }}" title="Home" onClick="recordEvent('Header', 'Click', 'Logo');">
+                <img src="/skin/logo.svg" alt="{{ siteName }} Logo" class="max-w-[200px] mb-5">
+            </a>
+
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+</main>
+</body>
+</html>
+

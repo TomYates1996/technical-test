@@ -1,0 +1,131 @@
+color: null
+fieldLayouts:
+  18f89f5f-052d-41f0-ad62-90cdcf13ece5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b959a6cc-1a07-413d-88cf-1cb90314c8be
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: alternativeTitle
+            includeInCards: false
+            instructions: null
+            label: 'Alternative Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b3040986-d4cc-46bb-921a-3aae67dd3891
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2cc495be-3474-46b1-8a9e-14b54c2765bb # Thumb Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b80f6381-6fee-4e52-b452-40a560e607ae
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a43fa0fc-1eff-41d8-bade-177dac4acb5d
+            handle: redirect
+            includeInCards: false
+            instructions: null
+            label: Redirect
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0832517f-36fc-4c45-8dc3-58cbcaf385f4
+            userCondition: null
+            warning: null
+            width: 100
+        name: General
+        uid: 034e7735-16dd-4bf9-9b76-cd661a7b9f75
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 2d53a350-6bf8-4867-9d18-3e981b9c59d9 # Show in Navigation
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cf2ab45a-cabd-48af-a469-15346e175384
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0bae724d-cd15-4da8-a484-5ada4191fa4e # Show in Sitemap
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4a54c191-f23a-41f0-80e7-8f368333db48
+            userCondition: null
+            warning: null
+            width: 100
+        name: Options
+        uid: 26d9cd66-4ad4-4b0e-8353-060dc1d27e68
+        userCondition: null
+handle: redirect
+hasTitleField: true
+icon: up-right-from-square
+name: Redirect
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

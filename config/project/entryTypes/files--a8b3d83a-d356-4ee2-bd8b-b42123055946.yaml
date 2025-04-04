@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  0b05648d-65bf-452d-ac8e-78526b05c501:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a7d4e10d-656d-449f-ae9b-5e070ecff230
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8c8b3a90-60fd-4871-ac71-588bc8669835
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d6f8fa93-6829-49e5-9225-37c70514f103
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f8653637-41c4-400a-b014-d0c39ad807ae
+        userCondition: null
+handle: files
+hasTitleField: false
+icon: cubes
+name: Files
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: Files
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

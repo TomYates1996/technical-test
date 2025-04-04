@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% set sections = craft.app.entries.allSections|filter(section => section.type != 'single' and section.type != 'channel') %}
+
+    {% set sectionArray = [] %}
+
+    {% for section in sections %}
+        {% if section.siteSettings[1].uriFormat is defined and section.siteSettings[1].uriFormat|length %}
+            {% set sectionArray = sectionArray|merge([section.id]) %}
+        {% endif %}
+    {% endfor %}
+
+    {% set pages = craft.entries.sectionId(sectionArray).showInSitemap(true).all() %}
+
+    {% for page in pages %}
+        {% if (page.type.handle != 'redirect') and (page.type.handle != 'folder') %}
+            {% if page.type.handle == 'page' %}
+                {% if page.showInSitemap == 'true' %}
+                <url>
+                    <loc>{{ page.getUrl }}</loc>
+                    <lastmod>{{ page.dateUpdated|date('Y-m-d') }}</lastmod>
+                    <changefreq>{{ page.sitemapChangeFrequency }}</changefreq>
+                    <priority>{{ page.sitemapPriority.value == 1 ? '1.0' : page.sitemapPriority }}</priority>
+                </url>
+                {% endif %}
+            {% else %}
+                <url>
+                    <loc>{{ page.getUrl }}</loc>
+                    <lastmod>{{ page.dateUpdated|date('Y-m-d') }}</lastmod>
+                    <changefreq>{{ page.sitemapChangeFrequency }}</changefreq>
+                    <priority>{{ page.sitemapPriority.value == 1 ? '1.0' : page.sitemapPriority }}</priority>
+                </url>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</urlset>

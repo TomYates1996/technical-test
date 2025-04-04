@@ -1,0 +1,30 @@
+{% if pages is defined and pages|length %}
+    <nav class="items-center gap-5 hidden lg:flex">
+        {% for page in pages %}
+            <div class="group relative">
+                <a href="{{ page.getUrl() }}" title="{{ page.title }}" aria-label="{{ page.title }}" {% if loop.index <= 9 %} accesskey="{{ loop.index }}" {% endif %} {% if page.type.handle == 'redirect' %} target="_blank" {% endif %} class="text-lg flex items-center gap-1.5 py-4 text-white font-telex hover:underline">
+                    <span class="group-hover:underline hover:underline">
+                        {{ page.title }}
+                    </span>
+
+                    {% if page.hasDescendants == true and page.slug != 'contact-us' %}
+                        <i class="fa-regular fa-chevron-down text-base group-hover:rotate-180 transition"></i>
+                    {% endif %}
+                </a>
+
+                {% if page.hasDescendants == true and page.slug != 'contact-us' %}
+                    <div class="hidden group-focus-within:block group-hover:block absolute left-0 top-full bg-curious-blue-100 border border-curious-blue-200 w-[250px] p-4">
+                        <nav class="flex flex-col gap-4">
+                            {% for child in page.children() %}
+                                <a href="{{ child.getUrl() }}" title="{{ child.title }}" aria-label="{{ child.title }}" {% if child.type.handle == 'redirect' %} target="_blank" {% endif %} class="hover:underline">
+                                    {{ child.title }}
+                                </a>
+                            {% endfor %}
+                        </nav>
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+        <i class="hidden lg:block fa-solid fa-magnifying-glass text-2xl text-white"></i>
+    </nav>
+{% endif %}

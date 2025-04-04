@@ -1,0 +1,39 @@
+{% if entry.faqs %}
+    <div class="py-[60px] lg:py-[100px] px-4 lg:px-[56px] bg-[url(C:\Users\Tom\Herd\technical-test\public\skin\categories_background.svg)] p-[16px] bg-cover bg-no-repeat flex flex-col gap-4 lg:gap-5">
+        {% if entry.faqsSectionHeading %}
+            <h2 class="text-[32px] lg:text-[50px] font-bungee leading-none text-center text-white uppercase mb-3 lg:mb-5">{{ entry.faqsSectionHeading }}</h2>
+        {% endif %}
+        {% for faq in entry.faqs %}
+            {% if faq.accordionHeading and faq.accordionContent %}
+                <div class="tab relative bg-grey border-light-green border-[2px] rounded-[20px]">
+                    <input class="accordion-cb absolute opacity-0 z-[1]" type="checkbox" id="accordion-{{ loop.index }}">
+                    <label for="accordion-{{ loop.index }}" class="font-bungee uppercase text-white flex justify-between p-6 lg:text-xl">
+                        {{ faq.accordionHeading }}
+                        <i class="fa-solid fa-caret-down text-[25px]"></i>
+                    </label>
+                    <div class="content overflow-hidden max-h-[0px]">
+                        {{ faq.accordionContent }}
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endif %}
+
+<style>
+    .tab .content p {
+        color: #ffffff;
+        font-family: "Telex", "sans-serif";
+        line-height: calc(26/16);
+        padding: 4px 24px 24px 24px;
+        @media screen and (min-width: 64em) {
+            padding-top: 8px;
+        }
+    }
+    .accordion-cb:checked ~ .content {
+        max-height: 500px;
+    }
+    .accordion-cb:checked ~ label i {
+        transform: rotate(180deg);
+    }
+</style>

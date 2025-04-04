@@ -1,0 +1,13 @@
+{% extends '_layout.twig' %}
+
+{% block content %}
+    {% include '_partials/banners/page-banner.twig' %}
+
+    <main id="content">
+        {% include '_partials/collections/category.twig' %}
+        {% include '_partials/collections/textboxwithimage.twig' %}
+        {% include '_partials/collections/latest_news.twig' %}
+        {% include '_partials/collections/faq.twig' %}
+        {% include '_partials/collections/connect.twig' %}
+    </main>
+{% endblock %}

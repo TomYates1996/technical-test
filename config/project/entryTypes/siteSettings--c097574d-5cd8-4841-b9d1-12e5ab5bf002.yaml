@@ -1,0 +1,278 @@
+color: null
+fieldLayouts:
+  71576424-4c0f-4428-9b3a-d9af174c3411:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 851ae3e1-ea56-4fc6-8800-c4add7c99c36
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: phoneNumber
+            includeInCards: false
+            instructions: null
+            label: 'Phone Number'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a6beb48-7767-4294-b78d-109d12fe88c8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: emailAddress
+            includeInCards: false
+            instructions: null
+            label: 'Email Address'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fc2b198d-7a6b-4ad9-b06f-1db8567b5631
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Contact Details'
+        uid: ef161bb7-3633-4b25-bf81-6abb73ca0a1c
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: streetAddress
+            includeInCards: false
+            instructions: 'The street address of the entity that owns the website'
+            label: 'Street Address'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 58aa17c2-d2fc-4122-bf6c-a978e55187eb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: locality
+            includeInCards: false
+            instructions: 'The locality of the entity that owns the website'
+            label: Locality
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb7d9848-6721-4cf7-9c98-2c1771fa0e5a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: region
+            includeInCards: false
+            instructions: 'The region of the entity that owns the website'
+            label: Region
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5e52dce4-7651-4247-a855-e98fee6c0816
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: postalCode
+            includeInCards: false
+            instructions: 'The postal code of the entity that owns the website'
+            label: 'Postal Code'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c54d8c58-03d9-48aa-aabc-78463bda4d43
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: country
+            includeInCards: false
+            instructions: 'The country in which the entity that owns the website is located'
+            label: Country
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b07d04de-2733-4e4e-9c52-03c55f9e811f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Address
+        uid: e760bff7-3de9-4505-b85f-0baaaa81e9af
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: xUrl
+            includeInCards: false
+            instructions: null
+            label: 'X URL'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1af5c7ee-3bf8-4625-835c-009b6bfba7d8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: facebookUrl
+            includeInCards: false
+            instructions: null
+            label: 'Facebook URL'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7e46981b-c4e7-4f15-95e3-8e9be7230850
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: instagramUrl
+            includeInCards: false
+            instructions: null
+            label: 'Instagram URL'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: abdabc14-0ba8-416c-9f87-874121f40bd7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: youtubeUrl
+            includeInCards: false
+            instructions: null
+            label: 'Youtube URL'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 590e8e41-b2dd-40de-8e50-3fefc2bb52b8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: linkedinUrl
+            includeInCards: false
+            instructions: null
+            label: 'LinkedIn URL'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8ed17c50-abfc-471f-9d98-2162baae6395
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: tiktokUrl
+            includeInCards: false
+            instructions: null
+            label: 'TikTok URL'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1050e335-41c4-4433-a3c5-e7759017e932
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Social Media'
+        uid: 15454926-0e3b-4f61-b7c3-57b4454a3e23
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f021cc07-c4ac-4c37-8098-04da97610f55 # Asset
+            handle: placeholderImage
+            includeInCards: false
+            instructions: null
+            label: 'Placeholder Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f48e7661-ba06-4797-829f-94ae38e905eb
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Placeholder Image'
+        uid: 1652136f-0b7c-4986-b850-d46df6845c41
+        userCondition: null
+handle: siteSettings
+hasTitleField: false
+icon: ''
+name: 'Site Settings'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: 'Site Settings'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,6 @@
+{% if entry.templateSelect is defined and entry.templateSelect|length and entry.templateSelect != '0' %}
+    {% include entry.templateSelect %}
+{% else %}
+    {% include [ '_pages/' ~ entry.type, '_pages/page' ] %}
+{% endif %}
+

@@ -1,0 +1,32 @@
+{% if entry.welcomeSectionHeading or entry.welcomeSectionText or entry.welcomeSectionImage %}
+<div class="bg-[url(C:\Users\Tom\Herd\technical-test\public\skin\welcome_background.svg)] bg-cover bg-no-repeat flex flex-col py-[60px] px-4 gap-5 lg:grid lg:grid-cols-2 lg:gap-5 lg:px-[56px] lg:py-[100px]">
+    {% if entry.welcomeSectionHeading or entry.welcomeSectionText %}
+        <div class="welcome-section-text border-dark-green rounded-[36px] border-[2px] bg-green p-6 text-black lg:p-9">
+            {% if entry.welcomeSectionHeading %}
+                <h2 class="text-[32px] leading-none tracking-normal font-bungee mb-6 lg:text-[50px] lg:mb-[28px]">{{ entry.welcomeSectionHeading }}</h2>
+            {% endif %}
+            {% if entry.welcomeSectionText %}
+                <p class="flex font-telex text-base">{{ entry.welcomeSectionText }}</p>
+            {% endif %}
+        </div>
+    {% endif %}
+    {% if entry.welcomeSectionImage %}
+        <img src="{{ entry.welcomeSectionImage[0].getUrl() }}" alt="{{ entry.welcomeSectionImage[0].title }}" class="w-full rounded-[36px] h-full object-cover">
+    {% endif %}
+</div>
+{% endif %}
+
+<style>
+    .welcome-section-text p {
+        display: flex;
+        font-family: "Telex", "sans-serif";
+        line-height: calc(26/16);
+    }
+    .welcome-section-text a {
+        margin-top: 24px;
+        text-decoration: underline;
+        @media screen and (min-width:64em) {
+            margin-top: 28px;
+        }
+    }
+</style>

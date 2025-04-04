@@ -1,0 +1,10 @@
+name: technical-test
+php: '8.3'
+secured: true
+aliases: {  }
+services:
+    mysql:
+        version: 8.0.36
+        port: '${CRAFT_DB_PORT}'
+integrations:
+    forge: {  }

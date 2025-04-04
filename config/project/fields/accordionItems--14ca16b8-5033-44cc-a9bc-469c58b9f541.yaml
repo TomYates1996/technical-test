@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: accordionItems
+instructions: null
+name: 'Accordion Items'
+searchable: false
+settings:
+  createButtonLabel: 'New Item'
+  entryTypes:
+    - 116a5bd6-99cb-4a97-bf30-7eef8346bbb6 # Item
+  includeTableView: false
+  maxEntries: null
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

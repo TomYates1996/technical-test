@@ -1,0 +1,58 @@
+{
+  "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-brands-400.ttf": {
+    "file": "assets/fa-brands-400-ZUlxGTsK.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-brands-400.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-brands-400.woff2": {
+    "file": "assets/fa-brands-400-Dn_1kIsy.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-brands-400.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-light-300.ttf": {
+    "file": "assets/fa-light-300-DiPozp2Z.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-light-300.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-light-300.woff2": {
+    "file": "assets/fa-light-300-QetY8god.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-light-300.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-regular-400.ttf": {
+    "file": "assets/fa-regular-400-DHHvTs0m.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-regular-400.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-regular-400.woff2": {
+    "file": "assets/fa-regular-400-CLLCpA7e.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-regular-400.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-sharp-solid-900.ttf": {
+    "file": "assets/fa-sharp-solid-900-CfjgQ_1b.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-sharp-solid-900.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-sharp-solid-900.woff2": {
+    "file": "assets/fa-sharp-solid-900-CivXUNbj.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-sharp-solid-900.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-solid-900.ttf": {
+    "file": "assets/fa-solid-900-DML4bNh5.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-solid-900.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-solid-900.woff2": {
+    "file": "assets/fa-solid-900-Bn3u-mvK.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-pro/webfonts/fa-solid-900.woff2"
+  },
+  "src/css/app.css": {
+    "file": "assets/css-DMEhauiT.css",
+    "src": "src/css/app.css",
+    "isEntry": true
+  },
+  "src/css/tailwind.css": {
+    "file": "assets/tailwind-BZVQXq6H.css",
+    "src": "src/css/tailwind.css",
+    "isEntry": true
+  },
+  "src/js/app.js": {
+    "file": "assets/js-BsfvQfe4.js",
+    "name": "js",
+    "src": "src/js/app.js",
+    "isEntry": true
+  }
+}

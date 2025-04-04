@@ -1,0 +1,11 @@
+columnSuffix: null
+handle: templateSelect
+instructions: null
+name: 'Template Select'
+searchable: false
+settings:
+  friendlyOptionValues: ''
+  limitToSubfolder: ''
+translationKeyFormat: null
+translationMethod: none
+type: swishdigital\templateselector\fields\TemplateSelectorField

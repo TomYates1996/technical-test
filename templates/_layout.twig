@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{ craft.app.language }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="csrfTokenName" content="{{ craft.app.config.general.csrfTokenName|e }}"/>
+    <meta name="csrfTokenValue" content="{{ craft.app.request.csrfToken|e }}"/>
+
+    {% include '_partials/seo.twig' %}
+
+    <link rel="stylesheet" href="{{ craft.vite.asset("src/css/tailwind.css") }}">
+    <link rel="stylesheet" href="{{ craft.vite.asset("src/css/app.css") }}">
+
+    {{ craft.vite.script("src/js/app.js") }}
+
+    {% block head %}{% endblock %}
+</head>
+<body class="overflow-x-hidden">
+    {% include '_partials/globals/header.twig' %}
+
+    {% block content %}{% endblock %}
+
+    {% include '_partials/globals/footer.twig' %}
+
+    {% block footer %}{% endblock %}
+</body>
+</html>

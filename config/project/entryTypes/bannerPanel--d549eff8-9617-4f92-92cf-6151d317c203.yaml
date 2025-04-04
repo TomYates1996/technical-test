@@ -1,0 +1,85 @@
+color: null
+fieldLayouts:
+  de353b02-bf6f-4a92-b7cb-8f83e8ef94c9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-28T16:24:41+00:00'
+            elementCondition: null
+            fieldUid: f021cc07-c4ac-4c37-8098-04da97610f55 # Asset
+            handle: panelImage
+            includeInCards: false
+            instructions: null
+            label: 'Panel Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aaf27d97-439f-40b1-8537-3288a3ec927a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-28T16:24:41+00:00'
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: panelTag
+            includeInCards: false
+            instructions: 'Example: 20/03'
+            label: 'Panel Tag'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 957e7534-ff74-42db-b5d3-20b5a019d17a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-28T16:24:41+00:00'
+            elementCondition: null
+            fieldUid: f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c # Plain Text
+            handle: panelTitle
+            includeInCards: false
+            instructions: null
+            label: 'Panel Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f9c794a0-ba51-417a-868e-991ee1969a5d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-28T16:24:41+00:00'
+            elementCondition: null
+            fieldUid: 8d64e890-8ba8-46b1-b27e-6e552d80f5d8 # Button
+            handle: panelButton
+            includeInCards: false
+            instructions: null
+            label: 'Panel Button'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 04b32c30-2a0f-4e9b-80a2-2a4097ebd0e9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f67bc43d-e614-4b65-abf5-ec665f97be33
+        userCondition: null
+handle: bannerPanel
+hasTitleField: false
+icon: null
+name: 'Banner Panel'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

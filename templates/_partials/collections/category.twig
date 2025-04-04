@@ -1,0 +1,14 @@
+<div class="py-[60px] lg:py-[100px] px-4 lg:px-[56px] bg-[url(C:\Users\Tom\Herd\technical-test\public\skin\categories_background.svg)] p-[16px] bg-cover bg-no-repeat">
+    <h2 class="text-[32px] lg:text-[50px] font-bungee leading-none text-center text-white uppercase mb-8 lg:mb-10">{{ entry.categoriesTitle }}</h2>
+
+    <div class="grid grid-cols-2 w-fit mx-auto gap-[10px] lg:gap-5 justify-center sm:flex sm:flex-wrap">
+        {% for category in entry.categories %}
+            <a href="{{ category.slug }}" class="flex flex-col justify-start align-center p-[18px] border-light-green border-[2px] rounded-[36px] bg-grey max-w-[166px] gap-4 text-center uppercase lg:max-w-[264px]">
+                {% if category.categoryImage %}
+                    <img src="{{ category.categoryImage[0].getUrl() }}" alt="{{ category.categoryImage[0].title }}" class="">
+                {% endif %}
+                <h2 class="text-base font-bungee text-white lg:text-2xl ">{{ category.title }}</h2>
+            </a>
+        {% endfor %}
+    </div>
+</div>

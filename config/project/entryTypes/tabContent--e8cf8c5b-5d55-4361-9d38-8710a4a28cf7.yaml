@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  7b545f49-c1ce-4c7a-a2f6-43a6a1d9c0b1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f9f98b80-bc7c-432a-8c7d-bc62f30766e1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d84316ce-ce2d-40aa-8d13-d199e6816746 # Tab Content Items
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7962ddd6-7e59-48bc-8a92-9aff440efd98
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0f96681b-0910-44b8-8b94-eddd273c54df
+        userCondition: null
+handle: tabContent
+hasTitleField: false
+icon: cubes
+name: 'Tab Content'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: 'Tab Content'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

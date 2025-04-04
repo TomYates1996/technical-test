@@ -1,0 +1,56 @@
+{% do craft.app.elements.eagerLoadElements(
+    className(entry),
+    [entry],
+    [
+        'bannerImage',
+        'thumbImage'
+    ]
+) %}
+
+<div class="">
+    <div class="container contents">
+        <div class="sm:grid sm:grid-cols-3 gap-2 md:gap-5 bg-[url(C:\Users\Tom\Herd\technical-test\public\skin\banner_background.svg)] p-[16px] bg-cover bg-no-repeat lg:px-[56px] lg:py-5">
+         {% if entry.banner is defined and entry.banner|length %}
+            {% set firstBlock = true %}
+            {% for block in entry.banner %}
+                {% if block.panelImage is defined and block.panelImage|length %}
+                    
+                    {% if firstBlock %}
+                        <div class="w-full col-span-2 col-1 row-span-3 row-1 relative mb-3 sm:mb-0">
+                            {% if block.panelTitle is defined and block.panelTitle|length %}
+                                <div class="absolute bottom-0 left-0 p-[10px] pt-[0] flex gap-6 flex-col lg:bottom-6 lg:left-6">
+                                    <h3 class="text-white font-bungee text-[35px] leading-none lg:font-[55px]">{{ block.panelTitle }}</h3> 
+                                    {% if block.panelButton is defined and block.panelButton|length %}
+                                        <a class="hidden sm:flex font-bungee text-base leading-none uppercase py-5 px-7 text-black bg-light-green rounded-[16px] w-fit" href="{{ block.panelButton }}">{{ block.panelButton.label }}</a h-ref="{{ block.panelButton }}">
+                                    {% endif %}
+                                </div>
+                            {% else %}
+                                {% if block.panelButton is defined and block.panelButton|length %}
+                                    <a href="{{ block.panelButton }}">{{ block.panelButton.label }}</a>
+                                {% endif %}
+                            {% endif %}
+                            {% if block.panelTag is defined and block.panelTag|length %}
+                                <p class="absolute top-[10px] left-[10px] lg:top-6 lg:left-6 p-[10px] rounded-[20px] border-2 border-light-green bg-grey text-white font-bungee text-base">{{ block.panelTag }}</p>
+                            {% endif %}
+                           
+                            <img class="md:object-cover md:h-full" src="{{ block.panelImage[0].getUrl() }}" alt="{{ block.panelImage[0].title }}" class="w-full">
+                        </div>
+                        {% set firstBlock = false %}
+                    {% else %}
+                        <div class="w-full col-3 relative mb-[12px] sm:mb-0 before:content[''] before:bg-[linear-gradient(180deg,_#00000000,_#00000080_50%,_#000000)] before:absolute before:top-0 before:left-0 before:w-full before:h-full">
+                            {% if block.panelTitle is defined and block.panelTitle|length %}
+                                <h4 class="absolute bottom-[10px] left-[10px] text-white font-bungee text-lg leading-none lg:font-[22px]">{{ block.panelTitle }}</h4>
+                            {% endif %}
+                            {% if block.panelTag is defined and block.panelTag|length %}
+                                <p class="absolute top-[10px] left-[10px] p-[10px] rounded-[20px] border-2 border-light-green bg-grey text-white font-bungee text-base">{{ block.panelTag }}</p>
+                            {% endif %}
+                            <img src="{{ block.panelImage[0].getUrl() }}" alt="{{ block.panelImage[0].title }}" class="w-full">
+                        </div>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+        </div>
+        </div>
+    </div>
+</div>

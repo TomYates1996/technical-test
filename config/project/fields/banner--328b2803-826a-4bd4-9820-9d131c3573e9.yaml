@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: banner
+instructions: null
+name: Banner
+searchable: false
+settings:
+  createButtonLabel: 'Add Panel'
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - d549eff8-9617-4f92-92cf-6151d317c203 # Banner Panel
+  includeTableView: false
+  maxEntries: 4
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

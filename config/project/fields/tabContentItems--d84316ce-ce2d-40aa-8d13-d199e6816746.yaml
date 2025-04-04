@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: tabContentItems
+instructions: null
+name: 'Tab Content Items'
+searchable: false
+settings:
+  createButtonLabel: 'New Item'
+  entryTypes:
+    - 9e8d6954-0e23-4352-8cba-cba21cde9d6c # Tab Content Item
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

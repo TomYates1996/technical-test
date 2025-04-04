@@ -1,0 +1,33 @@
+{% do view.registerJsFile('/dist/manifest.js') %}
+{% do view.registerJsFile('/dist/vendor.js') %}
+{% do view.registerJsFile('/dist/app.js') %}
+{% do view.registerCssFile('/dist/tailwind.css') %}
+{% do view.registerCssFile('/dist/app.css') %}
+{% do view.registerCssFile('/dist/fontawesome.css') %}
+
+{% extends '_message' %}
+
+{% set title = 'Page Not Found' %}
+
+{% block content %}
+    <h1 class="mb-5">
+        Page Not Found
+    </h1>
+
+    <p class="mb-5">
+        Sorry, we couldn't find the page you were looking for.
+    </p>
+
+    <p class="mb-5">
+        Here's a few things you could try:
+    </p>
+
+    <ul>
+        <li>If you typed the URL directly, make sure the spelling is correct.</li>
+        <li>Visit our <a href="{{ siteUrl }}" title="Go to homepage" aria-label="Go to homepage" class="underline">homepage</a> as the link is possibly outdated.</li>
+    </ul>
+
+    <a href="javascript:history.go(-1);" class="block mt-5">
+        <i class="fa fa-fw fa-chevron-left"></i> Back
+    </a>
+{% endblock %}

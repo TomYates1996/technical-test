@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: false
+entryTypes:
+  - c097574d-5cd8-4841-b9d1-12e5ab5bf002 # Site Settings
+handle: siteSettings
+maxAuthors: 1
+name: 'Site Settings'
+propagationMethod: all
+siteSettings:
+  849a5a43-c78b-450f-866f-19cf4b92b6a2: # Technical Test
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

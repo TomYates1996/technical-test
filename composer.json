@@ -1,0 +1,63 @@
+{
+  "repositories": [
+    {"type": "path", "url": "./plugins/bsfilters"}
+  ],
+  "require": {
+    "bluestorm/bsfilters": "^5.0",
+    "bluestormdesign/section-field": "^5.0",
+    "craftcms/aws-s3": "^2.2",
+    "craftcms/ckeditor": "^4.0",
+    "craftcms/cms": "^5.1",
+    "craftpulse/craft-colour-swatches": "^5.0",
+    "miranj/craft-obfuscator": "^1.2",
+    "nystudio107/craft-vite": "^5.0",
+    "putyourlightson/craft-elements-panel": "^3.0",
+    "swishdigital/template-selector": "^5.0",
+    "topshelfcraft/wordsmith": "^5.0",
+    "verbb/tablemaker": "^5.0",
+    "vlucas/phpdotenv": "^5.4.0"
+  },
+  "require-dev": {
+    "craftcms/generator": "^2.0.0",
+    "yiisoft/yii2-shell": "^2.0.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "modules\\": "modules/"
+    },
+    "exclude-from-classmap": [
+      "/vendor/erusev/parsedown-extra/test"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "craftcms/plugin-installer": true,
+      "yiisoft/yii2-composer": true
+    },
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "8.2"
+    }
+  },
+  "scripts": {
+    "craft-update": [
+      "@post-craft-update"
+    ],
+    "post-craft-update": [
+      "@php craft install/check && php craft clear-caches/all --interactive=0 || exit 0",
+      "@php craft install/check && php craft migrate/all --interactive=0 || exit 0",
+      "@php craft install/check && php craft project-config/apply --interactive=0 || return 0"
+    ],
+    "post-create-project-cmd": [
+      "@php craft setup/welcome"
+    ],
+    "post-update-cmd": "@post-craft-update",
+    "post-install-cmd": "@post-craft-update",
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

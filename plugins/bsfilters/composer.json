@@ -1,0 +1,41 @@
+{
+    "name": "bluestorm/bsfilters",
+    "description": "Bluestorm - Filters",
+    "type": "craft-plugin",
+    "version": "5.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "bsfilters"
+    ],
+    "support": {
+        "docs": "???",
+        "issues": "???"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bluestorm Design",
+            "homepage": "https://bluestormdesign.co.uk"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^5.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "bluestorm\\bsfilters\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "BSFilters",
+        "handle": "bsfilters",
+        "developer": "Bluestorm Design",
+        "developerUrl": "https://bluestormdesign.co.uk",
+        "documentationUrl": "???",
+        "changelogUrl": "???",
+        "class": "bluestorm\\bsfilters\\BSFilters"
+    }
+}

@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 745f7d5f-5313-4479-b303-6fb9e1e72116 # Page
+  - 7c7f449a-01fc-4afb-b6bc-92887cc5df86 # Home
+  - e7b97969-e821-49a6-adac-a7149030a274 # Redirect
+handle: pages
+maxAuthors: 1
+name: Pages
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  849a5a43-c78b-450f-866f-19cf4b92b6a2: # Technical Test
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/_index.twig
+    uriFormat: '{% if object.level == 1 %}{slug}{% else %}{parent.uri}/{slug}{% endif %}'
+structure:
+  maxLevels: null
+  uid: 79aca1cc-9480-4c01-81f8-fdff7475b9c2
+type: structure

@@ -1,0 +1,210 @@
+dateModified: 1743766726
+elementSources:
+  craft\elements\Entry:
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - authors
+        - link
+      type: native
+    -
+      heading: Structures
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:6b701eef-3b60-45be-b388-e87af2fa6cfb' # Pages
+      tableAttributes:
+        - postDate
+        - authors
+        - link
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:3bc32924-9d82-406a-ab56-5f9f0f013e7b'
+      tableAttributes:
+        - postDate
+        - authors
+        - link
+      type: native
+    -
+      heading: Listings
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:a29485b8-400f-4e0d-b47d-804211ef5731'
+      tableAttributes:
+        - postDate
+        - authors
+        - link
+      type: native
+    -
+      heading: Globals
+      type: heading
+    -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: singles
+      tableAttributes: '-'
+      type: native
+email:
+  fromEmail: ipad@bluestormdesign.co.uk
+  fromName: 'Sandbox - Craft 5'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  banners:
+    hasUrls: true
+    name: Banners
+    settings:
+      path: uploads/banners
+    type: craft\fs\Local
+    url: /uploads/banners
+  files:
+    hasUrls: true
+    name: Files
+    settings:
+      path: uploads/files
+    type: craft\fs\Local
+    url: /uploads/files
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: uploads/images
+    type: craft\fs\Local
+    url: /uploads/images
+meta:
+  __names__:
+    0bae724d-cd15-4da8-a484-5ada4191fa4e: 'Show in Sitemap' # Show in Sitemap
+    2cc495be-3474-46b1-8a9e-14b54c2765bb: 'Thumb Image' # Thumb Image
+    2d53a350-6bf8-4867-9d18-3e981b9c59d9: 'Show in Navigation' # Show in Navigation
+    3a7ac9d6-11ea-4e84-a06b-34180466c98d: 'Site Editors' # Site Editors
+    3bb59317-8f72-4c30-bf03-3ee2b287e738: 'Public Schema' # Public Schema
+    6b701eef-3b60-45be-b388-e87af2fa6cfb: Pages # Pages
+    7a3a67ca-078a-457f-ba5d-a17cffc31542: Default # Default
+    7c7f449a-01fc-4afb-b6bc-92887cc5df86: Home # Home
+    7fc6d164-5a0e-4614-b5e4-077b7438430c: Text # Text
+    8d64e890-8ba8-46b1-b27e-6e552d80f5d8: Button # Button
+    8f3cc97c-e00e-4451-9658-74d68877ed08: 'Sitemap Change Frequency' # Sitemap Change Frequency
+    9e8d6954-0e23-4352-8cba-cba21cde9d6c: 'Tab Content Item' # Tab Content Item
+    14ca16b8-5033-44cc-a9bc-469c58b9f541: 'Accordion Items' # Accordion Items
+    29c74bc0-63b8-4a8e-af6e-5b532f61cf89: 'Rich Text' # Rich Text
+    47e9c9cf-62a0-4a97-a7be-2b54401bb76c: Form # Form
+    48ddfcbc-73e8-4c11-91cd-5614b913d5a2: Accordion # Accordion
+    57eeeeab-6e51-42c3-88d3-45fd10458cac: SEO # SEO
+    58aee54a-941d-4ab5-9f2f-f0a4e28f5d0b: Assets # Assets
+    67b366f3-40ce-49a2-ace7-8250eb8121ca: 'News Tags' # News Tags
+    75b55757-a158-4cbf-b702-49a71203235c: 'Site Settings' # Site Settings
+    98dc8693-1c4a-42ce-8065-0f694f3af062: Gallery # Gallery
+    116a5bd6-99cb-4a97-bf30-7eef8346bbb6: Item # Item
+    176e278b-a98d-4748-adfd-4dc6c695c62b: Banners # Banners
+    328b2803-826a-4bd4-9820-9d131c3573e9: Banner # Banner
+    480c8953-9975-4c3b-9121-76f6ee046373: Information # Information
+    542c5338-9cb4-4868-b410-52011e598667: Category # Category
+    548bfd69-95e9-434f-ba57-472beae58087: Image # Image
+    614dc54b-1530-4d49-9e4e-ec220792d487: Article # Article
+    745f7d5f-5313-4479-b303-6fb9e1e72116: Page # Page
+    797b49bd-7c1a-4253-99a3-167d95a09dfc: Images # Images
+    849a5a43-c78b-450f-866f-19cf4b92b6a2: 'Technical Test' # Technical Test
+    867eb949-e1bf-4f1d-8fac-ac49f6eeb7e4: 'Template Select' # Template Select
+    946a28fd-c5c5-40ba-bad3-993536b3681b: 'Sitemap Priority' # Sitemap Priority
+    80732d2b-b4fe-4b65-b277-a632cb8c17e4: Categories # Categories
+    0089651a-3029-4ac7-80c7-e2219acba8df: Categories # Categories
+    690557fb-0265-427f-8f0f-816c7fa6413c: News # News
+    910749f7-c070-4b96-bdcb-879604ccfa4f: 'Full HD' # Full HD
+    05976310-a30a-49db-ba71-3c4e805c9fe2: Table # Table
+    41866360-b093-46ee-956f-4176fb986b5c: Callouts # Callouts
+    a8b3d83a-d356-4ee2-bd8b-b42123055946: Files # Files
+    ad63a91a-c1e7-4390-98f0-a6733a088a13: Files # Files
+    b64a926e-e29f-4db7-b763-c123fc2b7709: Callouts # Callouts
+    b80ea1c9-5963-40d8-8130-0f0082c27900: Basic # Basic
+    b334665c-d9c1-4a52-8201-45fcd20fcac3: 'News Articles' # News Articles
+    c097574d-5cd8-4841-b9d1-12e5ab5bf002: 'Site Settings' # Site Settings
+    cbb2c838-82e8-4a06-999f-f08b287438bd: 'Technical Test' # Technical Test
+    d549eff8-9617-4f92-92cf-6151d317c203: 'Banner Panel' # Banner Panel
+    d84316ce-ce2d-40aa-8d13-d199e6816746: 'Tab Content Items' # Tab Content Items
+    dad78aff-52ed-4b07-ace2-764077487400: 'News Tags' # News Tags
+    e7b97969-e821-49a6-adac-a7149030a274: Redirect # Redirect
+    e8cf8c5b-5d55-4361-9d38-8710a4a28cf7: 'Tab Content' # Tab Content
+    e39be023-4a6a-49d2-8846-f5ec7ae9eb49: 'SEO Title' # SEO Title
+    e90a81f6-b5f3-48cc-b60d-6b4cb4251640: Card # Card
+    ec771ffe-c493-4224-a864-495f53b3473b: News # News
+    ed7b2678-af49-438a-a888-8f7dde9b08b3: 'Show Children' # Show Children
+    f021cc07-c4ac-4c37-8098-04da97610f55: Asset # Asset
+    f2c2fe3d-88a8-4e22-b922-d8b092cd5c8c: 'Plain Text' # Plain Text
+    f8ddb923-743d-43ae-b30d-a070ca403312: Video # Video
+    f3233477-1aaf-4d16-98f3-c25236c46ea8: 'SEO Description' # SEO Description
+    fde9017b-4ce8-49b7-8415-596178f4de3b: 'Content Row' # Content Row
+    feb7ac10-17e8-4f96-8672-d0613303a0b9: 'Banner Image' # Banner Image
+plugins:
+  aws-s3:
+    edition: standard
+    enabled: true
+    schemaVersion: '2.0'
+  bsfilters:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  cloner:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  colour-swatches:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.4.3
+  elements-panel:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  obfuscator:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  section-field:
+    edition: standard
+    enabled: true
+    schemaVersion: 5.0.0
+  tablemaker:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+  template-selector:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  wordsmith:
+    edition: standard
+    enabled: true
+    schemaVersion: 0.0.0.0
+system:
+  edition: pro
+  live: true
+  name: 'Technical Test'
+  retryDuration: null
+  schemaVersion: 5.6.0.2
+  timeZone: Europe/London

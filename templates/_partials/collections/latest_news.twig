@@ -1,0 +1,28 @@
+{% if entry.newsSectionHeading or entry.newsArticles %}
+<div class="bg-dark-grey flex flex-col py-[60px] px-4 gap-5 lg:grid lg:gap-5 lg:px-[56px] lg:py-[100px]">
+    {% if entry.newsSectionHeading %}
+        <h2 class="text-[32px] lg:text-[50px] font-bungee leading-none text-center text-white uppercase mb-3 lg:mb-5">{{ entry.newsSectionHeading }}</h2>
+    {% endif %}
+    {% if entry.newsArticles %}
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {% for article in entry.newsArticles %}
+                <div class="flex flex-col gap-4">
+                    {% if article.thumbImage %}
+                        <img src="{{ article.thumbImage[0].getUrl() }}" alt="{{ article.thumbImage[0].title }}" class="w-full rounded-[36px] h-full object-cover">
+                    {% endif %}
+                    {% if article.newsTags %}
+                        {% for tag in article.newsTags %}
+                            <p class="flex border-[2px] border-light-green w-fit bg-grey font-telex text-white rounded-[20px] p-3">{{ tag.title }}</p>
+                        {% endfor %}
+                    {% endif %}
+                    {% if article.title %}
+                        <h4 class="font-bungee text-lg text-white leading-none">{{ article.title}} </h4>
+                    {% elseif article.alternativeTitle %}
+                        <h4>{{ article.alternativeTitle}} </h4>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</div>
+{% endif %}
